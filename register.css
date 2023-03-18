@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* navigation bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 150;
+    /* justify-content: space-between; */
+}
+
+.logo {
+    height: calc(1vw + 20px);
+    display: block;
+    margin: auto 0 auto 3%;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 0;
+    justify-content: space-between;
+    margin-left: 5%;
+    max-width: 40%;
+}
+
+.menu-items {
+    color: white;
+    
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    width: 10%;
+}
+
+.login-btn p {
+    margin-right: 15%;
+    color: white;
+}
+
+.menu-items:hover {
+    text-shadow: 1px 2px 4px rgba(69, 195, 213, 0.7);
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 0;
+    background-color: #f0d64b;
+    width: 10%;
+}
+
+
+/* register-container */
+.contents {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    background-image: url("assets/genshin-impact.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* justify-content: center; */
+    color: rgba(74, 92, 126, 1);
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2% 5% 1% 2%;
+}
+
+.register-container h1 {
+    font-size: 2em;
+}
+
+.register-container p {
+    font-size: 1em;
+}
+
+
+/* register-form */
+.register-form {
+    align-self: flex-end;
+    width: calc(10vw + 220px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2%;
+    padding: 1.5%;
+    gap: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: -3.5%;
+
+}
+
+.register-form a {
+    color: rgba(74, 92, 126, 1);
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1vw;
+}
+
+.form-input input {
+    border: 0px;
+    width: 80%;
+    height: 20%;
+    border-radius: calc(0.3vw + 5px);
+    padding: 5%;
+}
+
+.form-input-wrong {
+    border: 1px solid red;
+}
+
+.form-input-wrong::placeholder {
+    color: red;
+}
+
+.agreement {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.agreement .validation {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+}
+
+.agreement .validation-show {
+    display: block;
+}
+
+.agreement p {
+    font-size: 0.67em;
+}
+
+.agreement .checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media img {
+    width: 13%; 
+}
+
+.register-button {
+    display: block;
+    width: 80%;
+    color: white;
+    background-color: rgba(14, 30, 42, 1);
+    text-align: center;
+    padding: 2.5%;
+    border-radius: calc(0.3vw + 5px);
+    cursor: pointer;
+}
+
+.register-button p {
+    font-size: 1.5em;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.follow-collections {
+    width: 100%;
+    padding: calc(1.1vw + 13px);
+    padding-left: 0;
+    background-color: rgba(18, 18, 18, 1);
+}
+
+.follow-links {
+    position: relative;
+    display: flex;
+    gap: 2.5%;
+    padding-left: 12%;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(3vw + 20px);
+    gap: 4vw;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.logo-footer {
+    height: calc(10vh + 50px);
+}
+
+.footer-links {
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

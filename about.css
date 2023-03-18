@@ -1,0 +1,410 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navigation bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 150;
+    /* justify-content: space-between; */
+}
+
+.logo {
+    height: calc(1vw + 20px);
+    display: block;
+    margin: auto 0 auto 3%;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1 1 0;
+    justify-content: space-between;
+    margin-left: 5%;
+    max-width: 40%;
+}
+
+.menu-items {
+    color: white;
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    width: 10%;
+}
+
+.login-btn p {
+    margin-right: 15%;
+    color: white;
+}
+
+.menu-items:hover {
+    text-shadow: 1px 2px 4px rgba(69, 195, 213, 0.7);
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-right: 0;
+    background-color: #f0d64b;
+    width: 10%;
+}
+
+.download-btn p {
+    color: rgba(96, 81, 81, 1);
+}
+
+
+/* Contents */
+
+/* jumbotron */
+.jumbotron-about{
+    background-image: url("assets/JumbotronAbout.png");
+    padding: 50vh 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.jumbotron-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1)
+}
+
+.jumbotron-text h1 {
+    font-size: 3.5em;
+}
+
+.jumbotron-text h2 {
+    padding: 0.7%;
+    font-size: 2em;
+}
+
+.about-back {
+    background-image: url("assets/AboutBackground.png");
+    position: sticky;
+    height: 100vh;
+    top: 0%;
+    z-index: -1;
+    background-size: cover;
+}
+
+
+/* Game Videos */
+.game-videos {
+    margin: 0 auto;
+    margin-top: -100vh;
+    /* overflow-x: hidden; */
+    padding: 3%;
+    width: 90vw;
+}
+
+.about-title {
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 2px 4px rgba(69, 195, 213, 0.7);
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%
+}
+
+.videos {
+    display: flex;
+    width: 100%;
+    gap: 2%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+.videos.active {
+    cursor: grabbing;
+}
+
+.videos::-webkit-scrollbar {
+    display: none;
+}
+
+.single-video {
+    position: relative;
+}
+
+.video-image {
+    display: block;
+    width: 41vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
+/* Game Features */
+/* .game-features {
+    
+} */
+
+.game-features .about-title {
+    margin-bottom: 0%;
+}
+
+.features-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10vh;
+}
+
+.game-feature {
+    width: 80%;
+    height: 70vh;
+}
+
+.features {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.features.reverse {
+    flex-direction: row-reverse;
+}
+
+.features img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 5%;
+}
+
+.features-desc {
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.features-desc.no-reverse {
+    left: 0%;
+}
+
+.features-desc.no-reverse.button {
+    height: 89%;
+    left: 0%;
+}
+
+.features-desc.reverse {
+    height: 89%;
+    right: 0%;
+}
+
+.features-desc.reverse.no-button {
+    height: 80%;
+    right: 0%;
+}
+
+.features-details {
+    background-image: url("assets/frame3.png");
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.features-details.reverse {
+    height: 150%;
+}
+
+.features-details h2 {
+    font-size: 210%;
+    text-align: center;
+    margin-bottom: 5%;
+    color: rgba(101, 79, 66, 1);
+}
+
+.features-details p {
+    font-size: 130%;
+    text-align: justify;
+    color: rgba(120, 96, 75, 1);
+}
+
+.view-about-button {
+    width: 95%;
+    position: relative;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.view-about-button > img {
+    width: 100%;
+    margin-top: 0%;
+}
+
+.view-about-button h1 {
+    position: absolute;
+    align-self: center;
+    font-size: 180%;
+}
+
+#elements {
+    align-self: center;
+    margin-top: 30%;;
+}
+
+
+/* game-screenshots */
+.game-screenshots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screenshots-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 3%;
+}
+
+.screenshots {
+    display: flex;
+    position: relative;
+    width: 60%;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.screenshot {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    transition: 300ms opacity ease-out;
+
+}
+
+.screenshot-active {
+    z-index: 1;
+    opacity: 1;
+    transition: 300ms opacity ease-out;
+}
+
+.arrow {
+    width: 4%;
+}
+
+
+/* contents-footer */
+.contents-footer {
+    display: flex;
+    row-gap: 5%;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.contents-footer h1 {
+    margin-top: 15%;
+    margin-bottom: 0%;
+}
+
+.contents-footer p {
+    color: white;
+    font-size: 2em;
+}
+
+.platforms {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.follow-collections {
+    width: 100%;
+    padding: calc(1.1vw + 13px);
+    padding-left: 0;
+    background-color: rgba(18, 18, 18, 1);
+}
+
+.follow-links {
+    position: relative;
+    display: flex;
+    gap: 2.5%;
+    padding-left: 12%;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(3vw + 20px);
+    gap: 4vw;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.logo-footer {
+    height: calc(10vh + 50px);
+}
+
+.footer-links {
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

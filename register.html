@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="assets/LOGO.png" class="logo">
+        <div class="navbar-menu">
+            <a href="index.html">
+                <p class="menu-items">HOME</p>
+            </a>
+            <a href="characters.html">
+                <p class="menu-items">CHARACTERS</p></a>
+            <a href="maps.html">
+                <p class="menu-items">MAPS</p>
+            </a>
+            <a href="about.html">
+                <p class="menu-items">ABOUT GAME</p>
+            </a>
+        </div>
+        <a href="login.html" class="login-btn">
+            <p>Log In</p>
+            <img src="assets/user.png">
+        </a>
+        <div class="download-btn">
+            <p>Download</p>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="register-container">
+            <a href="index.html">
+                <img src="assets/logoShadow.png" class="logo">
+            </a>
+            <div class="register-form">
+                <h1>Register</h1>
+                <div class="form-input">
+                    <input type="text" placeholder="Username" id="username" onclick="resetInput('username')">
+                    <input type="email" placeholder="E-Mail" id="email" onclick="resetInput('email')">
+                    <input type="number" placeholder="Age" id="age" onclick="resetInput('age')">
+                    <input type="password" placeholder="Password" id="password" onclick="resetInput('password')">
+                </div>
+                <div class="agreement">
+                    <div class="checkbox">
+                        <input type="checkbox" onclick="isChecked()">
+                        <p>I have read and agree to the Terms of Service & Privacy Policy</p>
+                    </div>
+                    <p class="validation">*Please check the agreement box</p>
+                </div>
+                <p>Or Register Using Social Media</p>
+                <div class="social-media">
+                    <img src="assets/google.png">
+                    <img src="assets/apple2.png">
+                    <img src="assets/facebook3.png">
+                    <img src="assets/twitter3.png">
+                </div>
+                <button class="register-button" onclick="checkForm(this)">
+                    <p>Register</p>
+                </button>
+                <a id="login" href="login.html">Already Have an Account?</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="follow-collections">
+            <div class="follow-links">
+                <img src="assets/facebook2.png">
+                <img src="assets/twitter2.png">
+                <img src="assets/youtube2.png">
+                <img src="assets/instagram2.png">
+                <img src="assets/discord2.png">
+                <img src="assets/reddit2.png">
+                <img src="assets/hoyolab2.png">
+            </div>
+        </div>
+        <div class="footer-details">
+            <img src="assets/LOGO.png" class="logo-footer">
+            <ul class="footer-links">
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+            <img src="assets/esrb.png"">
+            <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+                Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
+            <img src="assets/hoyoverse.png">
+            <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+<script src="register.js"></script>
+</html>
