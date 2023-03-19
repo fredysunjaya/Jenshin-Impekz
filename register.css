@@ -8,51 +8,64 @@ a {
     text-decoration: none;
 }
 
+@font-face {
+    font-family: genshinFont;
+    src: url(zh-cn.ttf);
+}
 
 /* navigation bar */
 .navbar {
+    font-family: genshinFont;
     background-color: rgba(0, 0, 0, 0.65);
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100vw;
     height: 10vh;
     position: fixed;
     z-index: 150;
-    /* justify-content: space-between; */
+    padding: 0 2%;
+    padding-right: 0;
+    gap: 7%;
+}
+
+.navbar p {
+    font-size: 0.7em;
 }
 
 .logo {
+    align-self: center;
     height: calc(1vw + 20px);
     display: block;
-    margin: auto 0 auto 3%;
 }
 
 .navbar-menu {
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex: 1 1 0;
     justify-content: space-between;
-    margin-left: 5%;
-    max-width: 40%;
+    max-width: 41%;
 }
 
 .menu-items {
     color: white;
-    
 }
 
 .login-btn {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    margin-left: 20%;
-    width: 10%;
+    /* margin-left: 20%; */
+    width: 20%;
 }
 
 .login-btn p {
-    margin-right: 15%;
+    margin-right: 1.5vw;
     color: white;
+}
+
+.user {
+    width: calc(2vw + 10px);
 }
 
 .menu-items:hover {
@@ -61,14 +74,112 @@ a {
     transition-timing-function: ease-out;
 }
 
-.download-btn {
+.download-btn-container {
     display: flex;
-    justify-content: center;
+    width: 12.5%;
+    height: 100%;
+}
+
+.download-btn {
+    align-self: flex-end;
+    display: flex;
     align-items: center;
-    margin: 0 auto;
-    margin-right: 0;
+    justify-content: center;
     background-color: #f0d64b;
-    width: 10%;
+    padding: 0 1vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.sidebar {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    right: -500px;
+}
+
+.sidebar-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-list .menu-items {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 20%;
+}
+
+.menu-items.login-btn2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+@media screen and (max-width: 769px) {
+    .navbar {
+        gap: 4%;
+    }
+
+    .navbar-menu {
+        max-width: 50%;
+    }
+
+    .login-btn {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .download-btn-container {
+        font-size: 0.7em;
+        width: 50%;
+        height: 60%;
+        padding: 1.5%;
+        justify-content: flex-end;
+    }
+    
+    .download-btn {
+        width: 40%;
+        border-radius: 8px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    #menu-btn {
+        position: relative;
+        display: block;
+        height: calc(1vw + 10px);
+    }
+
+    .sidebar-show {
+        visibility: visible;
+        right: 0px;
+        transition: all 1s;
+    }
 }
 
 
@@ -88,10 +199,11 @@ a {
 .register-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
-    justify-content: space-between;
-    padding: 2% 5% 1% 2%;
+    padding: 1% 5% 1% 2%;
 }
 
 .register-container h1 {
@@ -102,10 +214,28 @@ a {
     font-size: 1em;
 }
 
+@media screen and (max-width: 769px) {
+    .register-container {
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+
+    .register-container h1 {
+        font-size: 1.5em;
+    }
+    
+    .register-container p {
+        font-size: 0.7em;
+    }
+
+    .register-container a {
+        font-size: 0.7em;
+    }
+}
 
 /* register-form */
 .register-form {
-    align-self: flex-end;
     width: calc(10vw + 220px);
     position: relative;
     display: flex;
@@ -115,8 +245,7 @@ a {
     padding: 1.5%;
     gap: 1.5vw;
     background-color: rgba(255, 255, 255, 0.7);
-    margin-top: -3.5%;
-
+    justify-content: space-between;
 }
 
 .register-form a {
@@ -125,6 +254,7 @@ a {
 
 .form-input {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -144,11 +274,12 @@ a {
 }
 
 .form-input-wrong::placeholder {
+    font-size: 0.7em;
     color: red;
 }
 
 .agreement {
-    width: 80%;
+    width: 87%;
     display: flex;
     flex-direction: column;
 }
@@ -183,7 +314,9 @@ a {
 }
 
 .register-button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     color: white;
     background-color: rgba(14, 30, 42, 1);
@@ -197,17 +330,24 @@ a {
     font-size: 1.5em;
 }
 
+@media screen and (max-width: 769px) {
+    .register-form {
+        padding: 2.5%;
+    }
+}
+
 
 /* footer */
 .footer {
     width: 100%;
     background-color: black;
     color: white;
+    font-family: Tahoma;
 }
 
 .follow-collections {
     width: 100%;
-    padding: calc(1.1vw + 13px);
+    padding: calc(1vw + 10px);
     padding-left: 0;
     background-color: rgba(18, 18, 18, 1);
 }
@@ -215,16 +355,32 @@ a {
 .follow-links {
     position: relative;
     display: flex;
-    gap: 2.5%;
+    gap: 3%;
     padding-left: 12%;
+}
+
+.follow-links img {
+    height: calc(1vw + 10px);
 }
 
 .footer-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: calc(3vw + 20px);
-    gap: 4vw;
+    padding: calc(3vw + 20px) 5%;
+    gap: calc(3vh + 20px);
+}
+
+.footer-details img {
+    width: 25%;
+}
+
+#hoyoverse {
+    width: calc(20% + 100px);
+}
+
+#esrb {
+    width: calc(10% + 50px);
 }
 
 .footer p {
@@ -232,13 +388,23 @@ a {
     font-size: 0.8em;
 }
 
-.logo-footer {
-    height: calc(10vh + 50px);
-}
-
 .footer-links {
     list-style-type: none;
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 769px) {
+    .footer-links {
+        width: 75%;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-links {
+        font-size: 0.6em;
+        width: 95%;
+    }
 }

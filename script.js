@@ -32,3 +32,24 @@ function changeImageEvent() {
     delete activeImg.dataset.active2;
     j++;
 }
+
+
+// sidebar button
+const menuBtn = document.querySelector("#menu-btn");
+const sidebar = document.querySelector(".sidebar")
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("sidebar-show");
+});
+
+document.querySelector(".jumbotron").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
+
+document.querySelector(".contents").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
+
+document.querySelector(".footer").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});

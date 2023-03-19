@@ -7,12 +7,39 @@ const agreement = document.querySelector(".checkbox input");
 const validation = document.querySelector(".validation");
 let flag = 0;
 
+function checkPassword(password) {
+    let flag = 0;
+
+    for(let i = 0; i < password.length; i++) {
+        if(password.charAt(i) >= 'a' && password.charAt(i) <= 'z') {
+            flag++;
+            break;
+        }
+    }
+    for(let i = 0; i < password.length; i++) {
+        if(password.charAt(i) >= 'A' && password.charAt(i) <= 'Z') {
+            flag++;
+            break;
+        }
+    }
+    for(let i = 0; i < password.length; i++) {
+        if(password.charAt(i) >= '0' && password.charAt(i) <= '9') {
+            flag++;
+            break;
+        }
+    }
+    if(flag == 3) {
+        return false;
+    }
+    return true;
+}
+
 function checkForm(target) {
     flag = 0;
-    if(username.value.length <= 5)  {
+    if(username.value.length < 5 || username.value.length > 32)  {
         username.value = "";
         username.classList.add("form-input-wrong");
-        username.placeholder = "Username must be 5 or more characters";
+        username.placeholder = "Username must be 5-32 characters";
         flag = 1;
     }
     if(email.value.length <= 0 || !email.value.includes("@gmail.com")) {
@@ -27,10 +54,10 @@ function checkForm(target) {
         age.placeholder = "At least you must be 14 years old";
         flag = 1;
     }
-    if(password.value.length < 8) {
+    if(checkPassword(password.value)) {
         password.value = "";
         password.classList.add("form-input-wrong");
-        password.placeholder = "Password must be 8 or more characters";
+        password.placeholder = "Passwords must contain number, lowercase, uppercase";
         flag = 1;
     }
     if(!agreement.checked) {
@@ -56,4 +83,20 @@ function isChecked() {
     }
 }
 
+
+// sidebar button
+const menuBtn = document.querySelector("#menu-btn");
+const sidebar = document.querySelector(".sidebar")
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("sidebar-show");
+});
+
+document.querySelector(".contents").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
+
+document.querySelector(".footer").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
 
