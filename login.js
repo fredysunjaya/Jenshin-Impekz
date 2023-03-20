@@ -62,6 +62,7 @@ function isChecked() {
     }
 }
 
+
 // sidebar button
 const menuBtn = document.querySelector("#menu-btn");
 const sidebar = document.querySelector(".sidebar")

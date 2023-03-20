@@ -169,6 +169,7 @@ const detailsDesc = document.querySelector(".details-desc");
 const arrows  = document.querySelectorAll(".arrow");
 const detailBtns = document.querySelectorAll(".details");
 const detailsContent = document.querySelector(".details-content");
+const detailsImg = document.getElementsByClassName("details-img");
 let imageIndex = 0;
 let detailsIndex = -1;
 let timer = 250;
@@ -223,3 +224,20 @@ function changeImage(offset) {
         detailsDesc.innerHTML = areas[detailsIndex][2][imageIndex].areaDesc;
     }, timer / 2);
 }
+
+
+// sidebar button
+const menuBtn = document.querySelector("#menu-btn");
+const sidebar = document.querySelector(".sidebar")
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("sidebar-show");
+});
+
+document.querySelector(".contents").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
+
+document.querySelector(".footer").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
