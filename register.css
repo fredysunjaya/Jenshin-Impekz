@@ -129,6 +129,10 @@ a {
     /* justify-content: space-between; */
 }
 
+.menu-items.login-btn2 p {
+    font-size: 1em;
+}
+
 @media screen and (max-width: 769px) {
     .navbar {
         gap: 4%;
@@ -403,6 +407,15 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+    .follow-collections {
+        padding-left: calc(1vw + 10px);
+    }
+
+    .follow-links {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
     .footer-links {
         font-size: 0.6em;
         width: 95%;
