@@ -9,7 +9,9 @@
 </head>
 <body>
     <div class="navbar">
-        <img src="assets/LOGO.png" class="logo">
+        <a href="index.html">
+            <img src="assets/LOGO.png" class="logo">
+        </a>
         <div class="navbar-menu">
             <a href="index.html">
                 <p class="menu-items">HOME</p>
@@ -23,12 +25,37 @@
                 <p class="menu-items">ABOUT GAME</p>
             </a>
         </div>
-        <a href="login.html" class="login-btn">
+        <a href="register.html" class="login-btn">
             <p>Log In</p>
-            <img src="assets/user.png">
+            <img src="assets/user.png" class="user">
         </a>
-        <div class="download-btn">
-            <p>Download</p>
+        <div class="download-btn-container">
+            <div class="download-btn">
+                <p>Download</p>
+            </div>
+        </div>
+        <img src="assets/menu.png" id="menu-btn">
+        <div class="sidebar">
+            <ul class="sidebar-list">   
+                <a href="index.html" class="menu-items">
+                    <li>Home</li>
+                </a>
+                <a href="characters.html" class="menu-items">
+                    <li>Characters</li>
+                </a>
+                <a href="maps.html" class="menu-items">
+                    <li>Maps</li>
+                </a>
+                <a href="about.html" class="menu-items">
+                    <li>About Game</li>
+                </a>
+                <a href="register.html" class="menu-items">
+                    <li class="menu-items login-btn2">
+                        <p>Log In</p>
+                        <img src="assets/user.png" class="user">
+                    </li>
+                </a>
+            </ul>
         </div>
     </div>
     <div class="contents">
@@ -48,6 +75,34 @@
             <div class="region">
                 <img src="assets/sumeruSymbol.png" class="region-symbol">
                 <p>Sumeru</p>
+            </div>
+        </div>
+        <div id="regions-dropdown-container">
+            <div class="dropBtn-container">
+                <img src="assets/MondstadtSymbol.png" class="dropdown-region">
+                <p>Mondstadt</p>
+                <img src="assets/dropdownArrow.png" id="dropdown-arrow">
+            </div>
+            <div class="regions-dropdown">
+                <div class="dropdown">
+                    <img src="assets/MondstadtSymbol.png" class="dropdown-region">
+                    <p>Monstadt</p>
+                </div>
+                <div class="dropdown-line"></div>
+                <div class="dropdown">
+                    <img src="assets/liyueSymbol.png" class="dropdown-region">
+                    <p>Liyue</p>
+                </div>
+                <div class="dropdown-line"></div>
+                <div class="dropdown">
+                    <img src="assets/inazumaSymbol.png" class="dropdown-region">
+                    <p>Inazuma</p>
+                </div>
+                <div class="dropdown-line"></div>
+                <div class="dropdown">
+                    <img src="assets/sumeruSymbol.png" class="dropdown-region">
+                    <p>Sumeru</p>
+                </div>
             </div>
         </div>
         <div id="character-display-image-container">
@@ -130,10 +185,10 @@
                 <li>About Us</li>
                 <li>Contact Us</li>
             </ul>
-            <img src="assets/esrb.png"">
+            <img src="assets/esrb.png" id="esrb">
             <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
                 Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
-            <img src="assets/hoyoverse.png">
+            <img src="assets/hoyoverse.png" id="hoyoverse">
             <p>Copyright © COGNOSPHERE. All Rights Reserved.</p>
         </div>
     </div>

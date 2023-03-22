@@ -333,7 +333,7 @@ a {
 }
 
 .features-desc {
-    height: 80%;
+    /* height: 80%; */
     width: 40%;
     position: absolute;
     top: 7.5%;
@@ -347,17 +347,18 @@ a {
 
 .features-desc.no-reverse.button {
     height: 89%;
+    justify-content: space-between;
     left: 0%;
 }
 
 .features-desc.reverse {
-    height: 89%;
+    height: 88.8%;
     right: 0%;
 }
 
 .features-desc.reverse.no-button {
     height: 80%;
-    right: 0%;
+    /* right: 0%; */
 }
 
 .features-details {
@@ -365,15 +366,17 @@ a {
     display: flex;
     flex-direction: column;
     padding: 10%;
+    padding-bottom: 25%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     gap: 5%;
 }
 
 .features-details.reverse {
-    height: 150%;
+    height: 115%;
+    padding-bottom: 10%;
 }
 
 .features-details h2 {
@@ -535,22 +538,29 @@ a {
         top: 5%;
     }
 
+    .features-desc.reverse {
+        gap: 5%;
+        height: 80%;
+        right: 0%;
+    }
+
     .features-desc.no-reverse.button {
-        height: 72.5%;
-        left: 0%;
+        height: 70%;
+        left: 0%; 
     }
 
     .features-desc.reverse.no-button {
         height: 95%;
-        right: 0%;
-    }
+    } 
 
     .features-details {
-        height: 90%;
+        /* height: 90%; */
+        padding-bottom: 23%;
     }
 
     .features-details.reverse {
         height: 75%;
+        padding-bottom: 5%;
     }
 
     .features-details h2 {

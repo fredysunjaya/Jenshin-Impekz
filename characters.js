@@ -14,6 +14,13 @@ const regionHoverSymbol = [
     "assets/sumeruHover.png"
 ];
 
+const regionName = [
+    "Mondstadt",
+    "Liyue",
+    "Inazuma",
+    "Sumeru",
+];
+
 const regionSymbol = [
     "assets/MondstadtSymbol.png",
     "assets/liyueSymbol.png",
@@ -303,6 +310,9 @@ const characterElement = document.querySelector(".character-name img");
 const characterBackstory = document.querySelector(".character-backstory");
 const characterTrailer = document.querySelector("#trailer-image");
 const characterLine = document.querySelector("#character-line");
+const dropdownBtn = document.querySelector(".dropBtn-container");
+const dropdownMenuContainer = document.querySelector(".regions-dropdown");
+const dropdowns = document.querySelectorAll(".dropdown");
 
 let charIndex = 0;
 let charActive = 0;
@@ -324,7 +334,7 @@ characterSelections.forEach((characterSelection, index) => {
 
             charContainer.classList.add("characters-container-active");
             characterImage.classList.add("active");
-        }, 480);
+        }, 200);
         
         charActive = index;
     })
@@ -366,32 +376,26 @@ arrows.forEach((arrow, index) => {
 
 let regionIndex = 0;
 
+// dropdown region
+dropdownBtn.addEventListener("click", () => {
+    dropdownMenuContainer.classList.add("regions-dropdown-active");
+    console.log("view");
+
+    dropdowns.forEach((region, index) => {
+        region.addEventListener("click", () => {
+            changeRegion(region, index);
+
+            dropdownMenuContainer.classList.remove("regions-dropdown-active");
+            document.querySelector(".dropBtn-container .dropdown-region").src = regionSymbol[regionIndex];
+            document.querySelector(".dropBtn-container p").innerHTML = regionName[regionIndex];
+        });
+    });
+});
+
+// region selection
 regions.forEach((region, index) => {
     region.addEventListener("click", () => {
-        charIndex = 0;
-        
-        regionImgs[index].src = regionAssets[index][1];
-        regions[regionIndex].classList.remove("active");
-        regionIndex = index;
-        region.classList.add("active");
-        contents.style.backgroundImage = "url(" + regionAssets[index][2] + ")"
-
-        characterImage.src = assets[regionIndex][0].characterImage;
-        characterName.innerHTML = assets[regionIndex][0].characterName;
-        characterElement.src = assets[regionIndex][0].characterElement;
-        characterBackstory.innerHTML = assets[regionIndex][0].characterDesc;
-        characterTrailer.src = assets[regionIndex][0].characterTrailer;
-        characterLine.src = assets[regionIndex][0].characterLine;
-        
-        for(let i = 0; i < characterSelections.length; i++) {
-            characterCards[i].src = assets[regionIndex][i].characterCard;
-            characterCardsName[i].innerHTML = assets[regionIndex][i].characterName; 
-        }
-
-        characterSelections[charActive].classList.remove("active");
-        characterSelections[0].classList.add("active");
-        
-        charActive = 0;
+        changeRegion(region, index);
     });
 
     region.addEventListener("mouseenter", () => {
@@ -408,8 +412,52 @@ regions.forEach((region, index) => {
     })
 });
 
+function changeRegion(region, index) {
+    charIndex = 0;
+            
+    regionImgs[index].src = regionAssets[index][1];
+    regions[regionIndex].classList.remove("active");
+    regionIndex = index;
+    region.classList.add("active");
+    contents.style.backgroundImage = "url(" + regionAssets[index][2] + ")"
+
+    characterImage.src = assets[regionIndex][0].characterImage;
+    characterName.innerHTML = assets[regionIndex][0].characterName;
+    characterElement.src = assets[regionIndex][0].characterElement;
+    characterBackstory.innerHTML = assets[regionIndex][0].characterDesc;
+    characterTrailer.src = assets[regionIndex][0].characterTrailer;
+    characterLine.src = assets[regionIndex][0].characterLine;
+    
+    for(let i = 0; i < characterSelections.length; i++) {
+        characterCards[i].src = assets[regionIndex][i].characterCard;
+        characterCardsName[i].innerHTML = assets[regionIndex][i].characterName; 
+    }
+
+    characterSelections[charActive].classList.remove("active");
+    characterSelections[0].classList.add("active");
+    
+    charActive = 0;
+}
+
 
 const allImage = document.querySelectorAll("img");
 allImage.forEach((image1) => {
     image1.setAttribute('draggable', false);
 })
+
+
+// sidebar button
+const menuBtn = document.querySelector("#menu-btn");
+const sidebar = document.querySelector(".sidebar")
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.add("sidebar-show");
+});
+
+document.querySelector(".contents").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
+
+document.querySelector(".footer").addEventListener("click", () => {
+    sidebar.classList.remove("sidebar-show");
+});
