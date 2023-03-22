@@ -337,6 +337,7 @@ characterSelections.forEach((characterSelection, index) => {
         }, 200);
         
         charActive = index;
+        dropdownMenuContainer.classList.remove("regions-dropdown-active");
     })
 });
 
@@ -370,6 +371,7 @@ arrows.forEach((arrow, index) => {
             characterSelections[charActive].classList.remove("active");
            
             charIndex++;
+            dropdownMenuContainer.classList.remove("regions-dropdown-active");
         }
     })
 });

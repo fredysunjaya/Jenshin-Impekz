@@ -242,7 +242,6 @@ a {
 
 /* register-form */
 .register-form {
-
     width: calc(10vw + 220px);
     display: flex;
     flex-direction: column;
@@ -322,7 +321,23 @@ a {
     .register-form {
         padding: 4%;
     }
+
+    .form-input {
+        gap: 1.5vh;
+    }
+
+    .form-input input {
+        width: 85%;
+    }
 }
+
+@media screen and (max-width: 576px) {
+    .register-form {
+        width: calc(30vw + 160px);
+        gap: 2.5vh;
+    }   
+}
+    
 
 
 /* footer */

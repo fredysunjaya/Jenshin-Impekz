@@ -34,12 +34,32 @@ function checkPassword(password) {
     return true;
 }
 
+function checkUsername(username) {
+    let flag = 0;
+    let specialChar = ["!", "@", "#", "%", "^", "&", "*", "(", ")", 
+    "-", "+", ".", ",", "?", "<", ">", "/", ";", ":", "[", "]", "{", "}", 
+    "|", "\\", "\"", "\'", "`", "~", "_", "="];
+    
+    if(username.length < 8 || username.length > 32) {
+        return true;
+    }
+
+    for(let i = 0; i < username.length; i++) {
+        if(specialChar.includes(username.charAt(i))) {
+            return true;
+        }
+    } 
+
+    return false;
+}
+
 function checkForm(target) {
     flag = 0;
-    if(username.value.length < 5 || username.value.length > 32)  {
+
+    if(checkUsername(username.value))  {
         username.value = "";
         username.classList.add("form-input-wrong");
-        username.placeholder = "Username must be 5-32 characters";
+        username.placeholder = "Username: 5-32 Chars,Special Chars Prohibited";
         flag = 1;
     }
     if(email.value.length <= 0 || !email.value.includes("@gmail.com")) {
@@ -57,13 +77,14 @@ function checkForm(target) {
     if(checkPassword(password.value)) {
         password.value = "";
         password.classList.add("form-input-wrong");
-        password.placeholder = "Passwords must contain number, lowercase, uppercase";
+        password.placeholder = "Passwords: number, lowercase, uppercase";
         flag = 1;
     }
     if(!agreement.checked) {
         flag = 1;
         validation.classList.add("validation-show");
     }
+    
     if(flag == 0) {
         location.href = "index.html";
     }

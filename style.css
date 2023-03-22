@@ -573,6 +573,10 @@ a {
         gap: 8vh;
     }
 
+    .character-section {
+        width: 85%;
+    }
+
     .character-section.first {
         margin-top: 5vh;
     }
@@ -594,16 +598,21 @@ a {
         font-size: 0.55em;
     }
 
+    #new-weapon {
+        width: 90%;
+    }
+
     #new-weapon .frame-home img {
-        width: 146.5%;
+        width: 122%;
     }
 
     #other-events {
-        height: calc(15vh + 25px);
+        width: 80%;
+        height: calc(18vh + 35px);
     }
 
     #other-events .frame-home img {
-        width: 169%;
+        width: 138%;
     }
 
     #follow {
