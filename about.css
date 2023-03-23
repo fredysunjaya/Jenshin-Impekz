@@ -201,7 +201,7 @@ a {
 /* jumbotron */
 /* --------------------------------------------------------------------------------- */
 .jumbotron-about{
-    background-image: url("assets/JumbotronAbout.png");
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/JumbotronAbout.png?raw=true");
     padding: 50vh 0;
     background-size: cover;
     background-position: center;
@@ -230,7 +230,7 @@ a {
 }
 
 .about-back {
-    background-image: url("assets/AboutBackground.png");
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/AboutBackground.png?raw=true");
     position: sticky;
     height: 100vh;
     top: 0%;
@@ -362,7 +362,7 @@ a {
 }
 
 .features-details {
-    background-image: url("assets/frame3.png");
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/frame3.png?raw=true");
     display: flex;
     flex-direction: column;
     padding: 10%;

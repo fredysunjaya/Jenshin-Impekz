@@ -16,7 +16,7 @@ a {
 
 @font-face {
     font-family: genshinFont;
-    src: url(zh-cn.ttf);
+    src: url("zh-cn.ttf");
 }
 
 
@@ -270,7 +270,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 .details {
@@ -293,23 +293,23 @@ a {
 }
 
 .maps.teyvat {
-    background-image: url("assets/teyvat.png");
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/teyvat.png?raw=true");
 }
 
 .maps.mondstadt {
-    background-image: url("assets/Mondstadt.png");
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Mondstadt.png?raw=true");
 }
 
 .maps.liyue {
-    background-image: url(assets/Liyue.png);
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Liyue.png?raw=true");
 }
 
 .maps.inazuma {
-    background-image: url(assets/inazuma1.jpg);
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/inazuma1.jpg?raw=true");
 }
 
 .maps.sumeru {
-    background-image: url(assets/Sumeru1.jpg);
+    background-image: url("https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Sumeru1.jpg?raw=true");
 }
 
 
