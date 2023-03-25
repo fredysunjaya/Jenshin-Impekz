@@ -495,7 +495,7 @@ a {
 .footer {
     width: 100%;
     background-color: black;
-    color: white;
+    color: rgba(160, 160, 160, 1);
     font-family: Tahoma;
 }
 
@@ -547,6 +547,10 @@ a {
     width: 60%;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-links li:hover {
+    color: white;
 }
 
 @media screen and (max-width: 769px) {

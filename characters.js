@@ -57,6 +57,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/jeanTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/jeanLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/Jean(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=_FOkixTeAaA",
         },
         {
             characterElement: characterElements[1],
@@ -66,6 +67,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/kaeyaTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/kaeyaLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/Kaeya(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=M2blSYJ6hrE",
         },
         {
             characterElement: characterElements[3],
@@ -75,6 +77,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/lisaTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/lisaLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/Lisa(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=OMHxS0N1zCA",
         },
         {
             characterElement: characterElements[5],
@@ -84,6 +87,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/barbaraTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/barbaraLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/Barbara(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=04N5bZ9pwUQ",
         },
         {
             characterElement: characterElements[6],
@@ -93,6 +97,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/amberTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/amberLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Mondstadt/Amber(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=YWU7Ow7EfCM",
         },
     ],
     [
@@ -104,6 +109,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/beidouTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/beidouLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/Beidou(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=ZpR4DJnzR_g",
         },
         {
             characterElement: characterElements[4],
@@ -113,6 +119,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/ningguangTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/ningguangLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/Ningguang(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=joIgKDlTXYI",
         },
         {
             characterElement: characterElements[3],
@@ -122,6 +129,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/keqingTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/keqingLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/Keqing(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=rPLh5QAedUE",
         },
         {
             characterElement: characterElements[6],
@@ -131,6 +139,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/xianglingTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/xianglingLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/Xiangling(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=TvqGRUWm8qE",
         },
         {
             characterElement: characterElements[0],
@@ -140,6 +149,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/xiaoTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/xiaoLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Liyue/Xiao(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=sjozpa9DsZU",
         },
     ],
     [
@@ -151,6 +161,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/kaedeharaKazuhaTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/kaedeharaKazuhaLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/Kaedehara%20Kazuha(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=zif0Lmhrivc",
         },
         {
             characterElement: characterElements[1],
@@ -160,6 +171,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/kamisatoAyakaTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/kamisatoAyakaLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/Kamisato%20Ayaka(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=5RCsr1Y8UZA",
         },
         {
             characterElement: characterElements[3],
@@ -169,6 +181,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/raidenShogunTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/raidenShogunLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/Raiden%20Shogun(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=mvrW4aKwAXw",
         },
         {
             characterElement: characterElements[0],
@@ -178,6 +191,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/sayuTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/sayuLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/Sayu(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=PXp8qKZeHeY",
         },
         {
             characterElement: characterElements[6],
@@ -187,6 +201,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/yoimiyaTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/yoimiyaLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Inazuma/Yoimiya(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=dn8etqEPtFg",
         },
     ],
     [
@@ -198,6 +213,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/candaceTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/candaceLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Candace(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=-n5ZlOtLzKU",
         },
         {
             characterElement: characterElements[2],
@@ -207,6 +223,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/colleiTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/colleiLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Collei(3).png?raw=true.png",
+            characterLink: "https://www.youtube.com/watch?v=J-nGm9BmKtE",
         },
         {
             characterElement: characterElements[3],
@@ -216,6 +233,7 @@ const assets = [
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/cynoTrailer.png?raw=true",
             characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/cynoLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Cyno(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=J9WuPBOC_S8",
         },
         {
             characterElement: characterElements[2],
@@ -223,8 +241,9 @@ const assets = [
             characterImage: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Tighnari(2).png?raw=true",
             characterDesc: "An Avidya Forest Watcher and botanical scholar who graduated from Amurta. He leads a fruitful life of patrolling the rainforest, protecting the ecology, and lecturing fools every day.",
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/tighnariTrailer.png?raw=true",
-            characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/tighnariLine(2).png?raw=true",
+            characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/tighnariLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Tighnari(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=oSSCRUmaquo",
         },
         {
             characterElement: characterElements[3],
@@ -232,8 +251,9 @@ const assets = [
             characterImage: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Dori(2).png?raw=true",
             characterDesc: "Dori is a merchant in Sumeru who has a fondness for glittering Mora.<br> With her persuasive eloquence, she is able to sell various strange and mysterious products for a very high price.",
             characterTrailer: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/doriTrailer.png?raw=true.png",
-            characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/doriLine(2).png?raw=true",
+            characterLine: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/doriLine.png?raw=true",
             characterCard: "https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Characters%20Sumeru/Dori(3).png?raw=true",
+            characterLink: "https://www.youtube.com/watch?v=P08q5Y7r9Z4",
         },
     ],
 ]
@@ -247,6 +267,7 @@ const characterLine = document.querySelector("#character-line");
 const dropdownBtn = document.querySelector(".dropBtn-container");
 const dropdownMenuContainer = document.querySelector(".regions-dropdown");
 const dropdowns = document.querySelectorAll(".dropdown");
+const trailerLink = document.querySelector(".character-trailer");
 
 let charIndex = 0;
 let charActive = 0;
@@ -267,6 +288,7 @@ characterSelections.forEach((characterSelection, index) => {
             characterBackstory.innerHTML = assets[regionIndex][index + charIndex].characterDesc;
             characterTrailer.src = "";
             characterTrailer.src = assets[regionIndex][index + charIndex].characterTrailer;
+            trailerLink.setAttribute("href", assets[regionIndex][index + charIndex].characterLink);
             characterLine.src = "";
             characterLine.src = assets[regionIndex][index + charIndex].characterLine;
 
@@ -356,20 +378,27 @@ regions.forEach((region, index) => {
 function changeRegion(region, index) {
     charIndex = 0;
             
+    regionImgs[index].src = "";
     regionImgs[index].src = regionAssets[index][1];
     regions[regionIndex].classList.remove("active");
     regionIndex = index;
     region.classList.add("active");
     contents.style.backgroundImage = "url(" + regionAssets[index][2] + ")"
 
+    characterImage.src = "";
     characterImage.src = assets[regionIndex][0].characterImage;
     characterName.innerHTML = assets[regionIndex][0].characterName;
+    characterElement.src = "";
     characterElement.src = assets[regionIndex][0].characterElement;
     characterBackstory.innerHTML = assets[regionIndex][0].characterDesc;
+    characterTrailer.src = "";
     characterTrailer.src = assets[regionIndex][0].characterTrailer;
+    trailerLink.setAttribute("href", assets[regionIndex][0].characterLink);
+    characterLine.src = "";
     characterLine.src = assets[regionIndex][0].characterLine;
     
     for(let i = 0; i < characterSelections.length; i++) {
+        characterCards[i].src = "";
         characterCards[i].src = assets[regionIndex][i].characterCard;
         characterCardsName[i].innerHTML = assets[regionIndex][i].characterName; 
     }

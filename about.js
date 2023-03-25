@@ -1,4 +1,13 @@
 const videos = document.querySelector(".videos"); 
+const singleVideo = document.querySelectorAll(".single-video");
+const videoLinks = [
+    "https://youtu.be/HnElxo1lghU",
+    "https://youtu.be/nSB6sOwCY3A",
+    "https://youtu.be/TAlKhARUcoY",
+    "https://youtu.be/SO__VQZirJ4",
+    "https://youtu.be/B8197NUQ0LE",
+];
+
 
 setTimeout(() => {
     videos.scrollTo(1000, 0);
@@ -33,11 +42,23 @@ videos.addEventListener('mousedown', (e) => {
 videos.addEventListener('mouseleave', () => {
     isDown = false;
     videos.classList.remove('active');
+
+    setTimeout(() => {
+        singleVideo.forEach((video, index) => {
+            video.setAttribute("href", videoLinks[index]);
+        });
+    }, 1);
 });
 
 videos.addEventListener('mouseup', () => {
     isDown = false;
     videos.classList.remove('active');
+
+    setTimeout(() => {
+        singleVideo.forEach((video, index) => {
+            video.setAttribute("href", videoLinks[index]);
+        });
+    }, 1);
 });
 
 videos.addEventListener('mousemove', (e) => {
@@ -49,6 +70,10 @@ videos.addEventListener('mousemove', (e) => {
     const x = e.pageX - videos.offsetLeft;
     const walk = x - startX;
     videos.scrollLeft = scrollLeft - walk;
+
+    singleVideo.forEach((video) => {
+        video.removeAttribute("href");
+    });
 });
 
 

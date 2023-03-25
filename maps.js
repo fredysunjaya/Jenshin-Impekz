@@ -26,7 +26,7 @@ let areas = [
                 areaDesc:"A sleepy little village to the south of Mondstadt, that sits facing the lake that surrounds the city. Most of the village's residents are hunters that provide fresh meat for all the big restaurants of Mondstadt. Springvale's rustic appeal attracts many tourists. If you are lucky in your travels, you may come across a restaurant that truly knows how to bring out the best qualities of Springvale's meat."
             },
             {
-                areaImage:"https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Maps%20Mondstadt/ThousandsWindsTemple.png?raw=true",
+                areaImage:"https://github.com/fredysunjaya/Jenshin-Impekz/blob/main/assets/Maps%20Mondstadt/ThousandWindsTemple.png?raw=true",
                 areaName:"Thousands Winds Temple",
                 areaDesc:"A collection of temple ruins that sits northeast of Mondstadt. According to local legend, millennia ago this area was a temple for worshipping the Anemo God. Though it has been left to waste for centuries, leaving the ruins you see today. If you look closely at some of the stone pillars, you can still faintly make out some elegant carvings. This long-forgotten symbol of commemoration is engraved with the maxim: \"Wind brings the seeds of tales, time allows them to take root.\""
             },
@@ -179,15 +179,17 @@ detailBtns.forEach((detailsBtn, index) => {
         detailsBtn.addEventListener("click", () => {
             imageIndex = 0;
             detailsIndex = index;
-            detailsSymbol.src = "";
             detailsSymbol.src = areas[detailsIndex][0];
             detailsTitle.innerHTML = areas[detailsIndex][1];
             detailsContainer.classList.add("detail-container-show");
             detailsContent.classList.add("details-content-show");
             body.classList.add("stop-scrolling");
-            imageBreak.src = areas[detailsIndex][2][imageIndex].areaImage;
-            detailsName.innerHTML = areas[detailsIndex][2][imageIndex].areaName;
-            detailsDesc.innerHTML = areas[detailsIndex][2][imageIndex].areaDesc;
+            imageBreak.src = "assets/none.png";
+            setTimeout(() => {
+                imageBreak.src = areas[detailsIndex][2][imageIndex].areaImage;
+                detailsName.innerHTML = areas[detailsIndex][2][imageIndex].areaName;
+                detailsDesc.innerHTML = areas[detailsIndex][2][imageIndex].areaDesc;
+            }, 1);
         });
 });
 
@@ -220,9 +222,12 @@ function changeImage(offset) {
     setTimeout(() => {
         detailsContent.classList.remove("details-content-hide");
         detailsContent.classList.add("details-content-show");
-        imageBreak.src = areas[detailsIndex][2][imageIndex].areaImage;
-        detailsName.innerHTML = areas[detailsIndex][2][imageIndex].areaName;
-        detailsDesc.innerHTML = areas[detailsIndex][2][imageIndex].areaDesc;
+        imageBreak.src = "assets/none.png";
+        setTimeout(() => {
+            imageBreak.src = areas[detailsIndex][2][imageIndex].areaImage;
+            detailsName.innerHTML = areas[detailsIndex][2][imageIndex].areaName;
+            detailsDesc.innerHTML = areas[detailsIndex][2][imageIndex].areaDesc;
+        }, 1);
     }, timer / 2);
 }
 
