@@ -340,7 +340,7 @@ a {
     margin-right: 6%;
 }
 
-#follow-links {
+#follow-links-home {
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -348,7 +348,7 @@ a {
     justify-content: space-between;
 }
 
-#follow-links img {
+#follow-links-home img {
     width: 90%;
 }
 

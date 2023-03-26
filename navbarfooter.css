@@ -201,6 +201,24 @@ a {
     font-family: Tahoma;
 }
 
+.follow-collections {
+    width: 100%;
+    padding: calc(1vw + 10px);
+    padding-left: 0;
+    background-color: rgba(18, 18, 18, 1);
+}
+
+.follow-links {
+    position: relative;
+    display: flex;
+    gap: 3%;
+    padding-left: 12%;
+}
+
+.follow-links img {
+    height: calc(1vw + 10px);
+}
+
 .footer-details {
     display: flex;
     flex-direction: column;
