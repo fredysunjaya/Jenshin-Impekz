@@ -59,7 +59,7 @@ function checkForm(target) {
     if(checkUsername(username.value))  {
         username.value = "";
         username.classList.add("form-input-wrong");
-        username.placeholder = "Username: 5-32 Chars,Special Chars Prohibited";
+        username.placeholder = "Username: 8-32 Chars,Special Chars Prohibited";
         flag = 1;
     }
     if(email.value.length <= 0 || !email.value.includes("@gmail.com")) {

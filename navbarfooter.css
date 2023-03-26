@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: genshinFont;
+    src: url(zh-cn.ttf);
+}
+
+
+/* navigation bar */
+/* --------------------------------------------------------------------------------- */
+.navbar {
+    font-family: genshinFont;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 150;
+    padding: 0 2%;
+    padding-right: 0;
+    gap: 7%;
+}
+
+.navbar p {
+    font-size: 0.7em;
+}
+
+.logo {
+    align-self: center;
+    height: calc(1vw + 20px);
+    display: block;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: space-between;
+    max-width: 41%;
+}
+
+.menu-items {
+    color: white;
+}
+
+.login-btn-container {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    /* margin-left: 20%; */
+}
+
+.login-btn p {
+    margin-right: 1.5vw;
+    color: white;
+}
+
+.user {
+    width: calc(2vw + 10px);
+}
+
+.menu-items:hover {
+    text-shadow: 1px 2px 4px rgba(69, 195, 213, 0.7);
+    transition: all 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.download-btn-container {
+    display: flex;
+    width: 12.5%;
+    height: 100%;
+}
+
+.download-btn {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0d64b;
+    padding: 0 1vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.sidebar {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    right: -500px;
+}
+
+.sidebar-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-list .menu-items {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 20%;
+}
+
+.menu-items.login-btn2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.menu-items.login-btn2 p {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 769px) {
+    .navbar {
+        gap: 4%;
+    }
+
+    .navbar-menu {
+        max-width: 50%;
+    }
+
+    .login-btn-container {
+        width: 17%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .download-btn-container {
+        font-size: 0.7em;
+        width: 50%;
+        height: 60%;
+        padding: 1.5%;
+        justify-content: flex-end;
+    }
+    
+    .download-btn {
+        width: 40%;
+        border-radius: 8px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    #menu-btn {
+        position: relative;
+        display: block;
+        height: calc(1vw + 10px);
+    }
+
+    .sidebar-show {
+        visibility: visible;
+        right: 0px;
+        transition: all 1s;
+    }
+}
+
+
+/* footer */
+/* --------------------------------------------------------------------------------- */
+.footer {
+    width: 100%;
+    background-color: black;
+    color: rgba(160, 160, 160, 1);
+    font-family: Tahoma;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(3vw + 20px) 5%;
+    gap: calc(3vh + 20px);
+}
+
+.footer-details img {
+    width: 25%;
+}
+
+#hoyoverse {
+    width: calc(20% + 100px);
+}
+
+#esrb {
+    width: calc(10% + 50px);
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.footer-links {
+    list-style-type: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links li:hover {
+    color: white;
+}
+
+@media screen and (max-width: 769px) {
+    .footer-links {
+        width: 75%;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .follow-collections {
+        padding-left: calc(1vw + 10px);
+    }
+
+    .follow-links {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .footer-links {
+        font-size: 0.6em;
+        width: 95%;
+    }
+}
