@@ -305,7 +305,6 @@ arrows.forEach((arrow, index) => {
     arrow.addEventListener("click", () => {
         if(index == 0) {
             if(charIndex <= 0) {
-                console.log('return');
                 return;
             }
 
@@ -320,7 +319,6 @@ arrows.forEach((arrow, index) => {
             charIndex--;
         } else if (index == 1) {
             if(charIndex + characterSelections.length >= assets[regionIndex].length) {
-                console.log('return');
                 return;
             }
 

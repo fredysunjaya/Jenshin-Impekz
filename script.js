@@ -7,7 +7,6 @@ let eventImages = document.querySelectorAll(".event-image");
 let i = 1;
 let j = 1;
 
-console.log(images.length, eventImages.length);
 
 setInterval(changeImageJumbotron, 3000);
 

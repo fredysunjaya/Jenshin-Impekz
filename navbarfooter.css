@@ -63,7 +63,6 @@ a {
     display: flex;
     align-items: center;
     width: fit-content;
-    /* margin-left: 20%; */
 }
 
 .login-btn p {
@@ -133,7 +132,6 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* justify-content: space-between; */
 }
 
 .menu-items.login-btn2 p {

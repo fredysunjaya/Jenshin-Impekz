@@ -212,7 +212,6 @@ function plusImage(offset) {
 // function untuk ganti image
 function changeImage(offset) {
     imageIndex = imageIndex + offset;
-    console.log(imageIndex);
     if(imageIndex >= areas[detailsIndex][2].length) {
         imageIndex = 0;
     } else if(imageIndex < 0) {

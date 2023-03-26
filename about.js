@@ -99,7 +99,6 @@ function changeImage(offset) {
     } else if(i < 0) {
         i = screenshots.length - 1;
     }
-    console.log(i);
     screenshots[j].classList.remove("screenshot-active");
     screenshots[i].classList.add("screenshot-active");
 }
